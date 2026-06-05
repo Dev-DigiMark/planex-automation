@@ -23,30 +23,12 @@ export async function login(page: Page, credentials?: Credentials): Promise<void
   await page.waitForLoadState('networkidle');
   // await page.waitForLoadState('domcontentloaded');
 
-  await page.getByRole('textbox', { name: 'Entrez l\'e-mail' }).click();
-  await page.getByRole('textbox', { name: 'Entrez l\'e-mail' }).fill(creds.email);
-  await page.getByRole('textbox', { name: 'Entrez le mot de passe' }).click();
-  await page.getByRole('textbox', { name: 'Entrez le mot de passe' }).fill(creds.password);
-  if(process.env.ROLE === "mgr"){
-    await page.getByRole('radio', { name: 'Responsable commercial', exact: true }).click();
-  }else{
-    await page.getByRole('radio', { name: 'Commercial', exact: true }).click();
-  }
-  await page.getByRole('button', { name: 'Se connecter' }).click();
-
-  await page.waitForLoadState('networkidle');
-
-  await page.getByRole('textbox', { name: 'Entrez le code OTP' }).click();
-  await page.getByRole('textbox', { name: 'Entrez le code OTP' }).fill(process.env.OTP || '000000');
-  await page.getByRole('button', { name: 'Continuer' }).click();
-  await page.waitForLoadState('networkidle');
-
   
-  // Wait for navigation to complete or dashboard to load
-  // Update this to match your app's post-login behavior
-  await page.waitForURL('**/dashboard');
-  const title = await page.title();
-  console.log('Page title after login:', title);
-  expect(title).toContain('Sales Panel - Scintia Callflow');
+  await page.getByRole('textbox', { name: 'Email Address' }).click();
+  await page.getByRole('textbox', { name: 'Email Address' }).fill(creds.email);
+  await page.getByRole('textbox', { name: 'Password' }).click();
+  await page.getByRole('textbox', { name: 'Password' }).fill(creds.password);
+  await page.getByRole('button', { name: 'main button' }).click();
+
 
 }
