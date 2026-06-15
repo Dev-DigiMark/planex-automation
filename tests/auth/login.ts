@@ -29,6 +29,8 @@ export async function login(page: Page, credentials?: Credentials): Promise<void
   await page.getByRole('textbox', { name: 'Password' }).click();
   await page.getByRole('textbox', { name: 'Password' }).fill(creds.password);
   await page.getByRole('button', { name: 'main button' }).click();
+  
+ 
 
 
 }

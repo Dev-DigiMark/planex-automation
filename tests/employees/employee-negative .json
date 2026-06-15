@@ -1,0 +1,41 @@
+{
+  "employee": {
+    "fullName": "@@@123###",
+    "designation": "",
+    "department": "InvalidDepartment",
+    "employmentType": "Contracttt",
+    "phoneNumber": "ABC123",
+    "emergencyContact": "+999123",
+    "address": "",
+    "cnic": "123456789",
+    "cnicUpdated": "ABC45-1234567-8"
+  },
+
+  "files": {
+    "profileImage": "test-data/invalid-file.txt",
+    "document": "test-data/malware.exe"
+  },
+
+  "dates": {
+    "dob": "December 31, 2035",
+    "joiningDate": "January 01, 2000",
+    "cnicExpiry": "January 01, 2020"
+  },
+
+  "finance": {
+    "accountTitle": "123456",
+    "bankName": "",
+    "accountNumber": "ABC123XYZ",
+    "iban": "US123456789",
+    "basicSalary": "-5000",
+    "allowance": "-100",
+    "providentFund": "150"
+  },
+
+  "portalCredentials": {
+    "email": "hina.gmail.com",
+    "password": "123"
+  },
+
+  "updatedPhoneNumber": "ABCDEF123"
+}

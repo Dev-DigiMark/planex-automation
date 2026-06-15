@@ -1,0 +1,41 @@
+{
+  "employee": {
+    "fullName": "hina khan",
+    "designation": "QA",
+    "department": "Engineering",
+    "employmentType": "Permanent",
+    "phoneNumber": "03243456234",
+    "emergencyContact": "+9212345678123",
+    "address": "Lahore",
+    "cnic": "12345-1234567-8",
+    "cnicUpdated": "12345-1234567-12"
+  },
+
+  "files": {
+    "profileImage": "test-data/Capture3.PNG",
+    "document": "test-data/Scintia Outreach Content (1).pdf"
+  },
+
+  "dates": {
+    "dob": "June 18",
+    "joiningDate": "January 18",
+    "cnicExpiry": "June 10"
+  },
+  
+  "finance": {
+    "accountTitle": "hina khan",
+    "bankName": "Habib Bank Limited (HBL)",
+    "accountNumber": "1234-1234-123456789123-1",
+    "iban": "PK00234567213456723456789",
+    "basicSalary": "89979",
+    "allowance":"3456",
+    "providentFund":"16"
+
+  
+  },
+  "portalCredentials": {
+    "email": "hina@gmail.com",
+    "password": "Hina@1234"
+  },
+  "updatedPhoneNumber": "+923242425270"
+}
