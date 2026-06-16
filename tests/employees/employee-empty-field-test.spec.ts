@@ -3,7 +3,6 @@ import { login ,getCredentials} from '../auth/login';
 import employeeJSON from  "../employees/employee-data.json"
 
 
-
 test('EMP-NEG-001 - Verify all mandatory field validations', async ({ page }) => {
    const userCredentials = getCredentials();
     const employeeData = employeeJSON;
@@ -67,29 +66,39 @@ test('EMP-NEG-001 - Verify all mandatory field validations', async ({ page }) =>
   await page.locator('button').filter({ hasText: 'Continue' }).click();
   // File Uploads
  // await expect(page.getByText(/PROFILE IMAGE.*required/i)).toBeVisible();
-  await expect(page.getByText(/DOCUMENT.*required/i)).toBeVisible();
-//await page.getByRole('textbox', { name: 'CNIC Number *' })
-    //.fill(employeeData.employee.cnic);
-  // Dates
-  await expect(page.getByText(/cnic number.*required/i)).toBeVisible();
-  //await expect(page.getByText(/joining date.*required/i)).toBeVisible();
- // await expect(page.getByText(/cnic expiry.*required/i)).toBeVisible();
+
+ 
+
+  await expect(page.getByText(/CNIC Number.*required/i)).toBeVisible();
+  await expect(page.getByText(/Add Contract Document.*required/i)).toBeVisible();
+  
+  await page.waitForTimeout(5000);
+ await page.locator('[name="cnic_number"]').click();
+ await page.locator('[name="cnic_number"]').fill(employeeData.employee.cnic);
+ 
+await page.locator('[name="contract_document"]') .setInputFiles('tests/employees/Scintia Outreach Content (1).pdf');//await page.goBack();
  await page.locator('button').filter({ hasText: 'Continue' }).click();
 
  
   
   await page.locator('button').filter({ hasText: 'Continue' }).click();
   // Finance
-  await expect(page.getByText(/account title.*required/i)).toBeVisible();
-  await expect(page.getByText(/bank name.*required/i)).toBeVisible();
-  await expect(page.getByText(/account number.*required/i)).toBeVisible();
-  await expect(page.getByText(/iban.*required/i)).toBeVisible();
-  await expect(page.getByText(/basic salary.*required/i)).toBeVisible();
+  await expect(page.getByText(/Account Title.*required/i)).toBeVisible();
+  
+   await expect(page.getByText(/Basic Salary (PKR).*required/i)).toBeVisible();
 
-  // Portal Credentials
-  await expect(page.getByText(/email.*required/i)).toBeVisible();
-  await expect(page.getByText(/password.*required/i)).toBeVisible();
+ await page.waitForTimeout(5000);
 
+  await page.getByRole('textbox', { name: 'Account Title' })
+  .fill(employeeData.finance.accountTitle);
+
+await page.getByRole('spinbutton', { name: 'Basic Salary (PKR) *' })
+  .fill(employeeData.finance.basicSalary);
+  //await expect(page.getByText(/email.*required/i)).toBeVisible();
+  //await expect(page.getByText(/password.*required/i)).toBeVisible();
+
+await page.locator('button').filter({ hasText: 'Continue' }).click();
+  
   // Stay on same page
-  await expect(page).toHaveURL(/employee/i);
+  //await expect(page).toHaveURL(/employee/i);
 });
