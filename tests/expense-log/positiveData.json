@@ -1,0 +1,13 @@
+{"expense":
+  {
+
+  "expenseName": "Team Lunch",
+  "amount": "10000",
+  "category": "Food",
+  "date": "June 5",
+  "department": "Finance",
+  "description": "Team lunch expense for project celebration",
+  "receiptPath": "expense-log/dummyBill.png",
+  "paymentMethod": "Cash"
+}
+}

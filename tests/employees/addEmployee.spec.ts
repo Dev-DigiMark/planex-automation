@@ -1,7 +1,7 @@
 
 import test  from "playwright/test";
 import { getCredentials, login } from "../auth/login";
-import employeeJSON from  "../employees/employee-data.json"
+import employeeJSON from  "../employees/employee-data.json";
  import path from 'path';
 import { expect } from "playwright/test";
 

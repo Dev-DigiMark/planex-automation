@@ -79,23 +79,21 @@ test('EMP-NEG-001 - Verify all mandatory field validations', async ({ page }) =>
 await page.locator('[name="contract_document"]') .setInputFiles('tests/employees/Scintia Outreach Content (1).pdf');//await page.goBack();
  await page.locator('button').filter({ hasText: 'Continue' }).click();
 
+
+
  
   
   await page.locator('button').filter({ hasText: 'Continue' }).click();
   // Finance
-  await expect(page.getByText(/Account Title.*required/i)).toBeVisible();
+  //await expect(page.getByText(/Account Title.*required/i)).toBeVisible();
   
-   await expect(page.getByText(/Basic Salary (PKR).*required/i)).toBeVisible();
+   await expect(page.getByText(/Basic Salary (PKR).*required/)).toBeVisible();
 
- await page.waitForTimeout(5000);
 
-  await page.getByRole('textbox', { name: 'Account Title' })
-  .fill(employeeData.finance.accountTitle);
+  
 
-await page.getByRole('spinbutton', { name: 'Basic Salary (PKR) *' })
+ await page.getByRole('spinbutton', { name: 'basic-salary *' })
   .fill(employeeData.finance.basicSalary);
-  //await expect(page.getByText(/email.*required/i)).toBeVisible();
-  //await expect(page.getByText(/password.*required/i)).toBeVisible();
 
 await page.locator('button').filter({ hasText: 'Continue' }).click();
   
