@@ -1,0 +1,195 @@
+◇ injected env (4) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+
+Running 24 tests using 1 worker
+
+◇ injected env (0) from .env // tip: ⌘ suppress logs { quiet: true }
+  ✓   1 [chromium] › tests\auth\login-negative.spec.ts:9:7 › Planex Login Page - Authentication Scenarios › Positive login should authenticate and show dashboard content (13.5s)
+  ✓   2 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-001 - Empty email and password (17.6s)
+  ✓   3 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-002 - Empty email (42.9s)
+  ✓   4 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-003 - Empty password (20.7s)
+  ✓   5 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-004 - Invalid email format (33.2s)
+  ✓   6 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-005 - Invalid email address (49.7s)
+  ✓   7 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-006 - Invalid password (26.8s)
+  ✓   8 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-007 - Invalid email and password (14.0s)
+  ✘   9 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-008 - Leading spaces in email (20.9s)
+◇ injected env (0) from .env // tip: ⌁ auth for agents [www.vestauth.com]
+  ✘  10 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-009 - Trailing spaces in email (44.4s)
+◇ injected env (0) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+  ✓  11 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-010 - Leading spaces in password (41.2s)
+  ✓  12 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-011 - Trailing spaces in password (36.0s)
+  ✓  13 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-012 - Special characters in email input (19.4s)
+  ✓  14 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-013 - SQL injection attempt (1.4m)
+  ✘  15 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-014 - XSS injection attempt (4.2m)
+◇ injected env (0) from .env // tip: ⌘ override existing { override: true }
+  ✓  16 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-015 - Extremely long email value (28.0s)
+  ✓  17 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-016 - Extremely long password value (43.8s)
+  ✓  18 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-017 - Boundary value validation for short email (16.9s)
+  ✓  19 [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-018 - Case sensitivity with wrong password casing (13.1s)
+  ✓  20 [chromium] › tests\auth\login-negative.spec.ts:25:7 › Planex Login Page - Authentication Scenarios › Session invalidates after logout and refresh (14.3s)
+  ✓  21 [chromium] › tests\auth\login-negative.spec.ts:38:7 › Planex Login Page - Authentication Scenarios › Direct dashboard access without login redirects to login page (6.9s)
+  ✓  22 [chromium] › tests\auth\login-negative.spec.ts:45:7 › Planex Login Page - Authentication Scenarios › Browser back button after logout stays on login page (16.0s)
+  ✓  23 [chromium] › tests\auth\login-negative.spec.ts:58:7 › Planex Login Page - Authentication Scenarios › Refresh dashboard after logout remains on login page (19.3s)
+  ✘  24 [chromium] › tests\auth\login-negative.spec.ts:71:7 › Planex Login Page - Authentication Scenarios › Multiple failed login attempts should show lockout message (19.4s)
+
+
+  1) [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-008 - Leading spaces in email 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: locator('body')
+    Expected substring: [32m"Invalid credentials"[39m
+    Received string:    [31m"DashboardEmployeesSalaryAdvance PaymentsBillingExpense LogProjectsLeave ManagementAnnouncementsKnowledge BaseAttendanceActivity LogLogoutffatimasuper adminDashboardWelcome back, fatimaThursday, 25 June 2026Total Employees209 ActiveTotal Salary (this month)PKR -1,541,873,495,296.42Net payablePending Bills00 Due soonTotal ExpensesPKR 0This monthQuick ActionsAdd EmployeeAdd SalaryAdd BillingLog ExpenseBilling OverviewPending Bills0Due Soon0"[39m
+    Timeout: 10000ms
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 10000ms[22m
+    [2m  - waiting for locator('body')[22m
+    [2m    8 × locator resolved to <body class="min-h-full flex flex-col">…</body>[22m
+    [2m      - unexpected value "Welcome backEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+    [2m    9 × locator resolved to <body class="min-h-full flex flex-col">…</body>[22m
+    [2m      - unexpected value "Welcome backEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy.Login successful"[22m
+    [2m    - locator resolved to <body class="min-h-full flex flex-col">…</body>[22m
+    [2m    - unexpected value "Welcome backEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+    [2m    4 × locator resolved to <body class="min-h-full flex flex-col">…</body>[22m
+    [2m      - unexpected value "DashboardEmployeesSalaryAdvance PaymentsBillingExpense LogProjectsLeave ManagementAnnouncementsKnowledge BaseAttendanceActivity LogLogoutffatimasuper adminDashboardWelcome back, fatimaThursday, 25 June 2026Quick ActionsAdd EmployeeAdd SalaryAdd BillingLog ExpenseBilling OverviewPending Bills0Due Soon0"[22m
+    [2m    - locator resolved to <body class="min-h-full flex flex-col">…</body>[22m
+    [2m    - unexpected value "DashboardEmployeesSalaryAdvance PaymentsBillingExpense LogProjectsLeave ManagementAnnouncementsKnowledge BaseAttendanceActivity LogLogoutffatimasuper adminDashboardWelcome back, fatimaThursday, 25 June 2026Total Employees209 ActiveTotal Salary (this month)PKR -1,541,873,495,296.42Net payablePending Bills00 Due soonTotal ExpensesPKR 0This monthQuick ActionsAdd EmployeeAdd SalaryAdd BillingLog ExpenseBilling OverviewPending Bills0Due Soon0"[22m
+
+
+       at ..\pages\LoginPage.ts:52
+
+      50 |
+      51 |   async expectLoginError(message: string): Promise<void> {
+    > 52 |     await expect(this.body).toContainText(message);
+         |                             ^
+      53 |   }
+      54 |
+      55 |   async expectDashboardVisible(): Promise<void> {
+        at LoginPage.expectLoginError (C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\pages\LoginPage.ts:52:29)
+        at C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\tests\auth\login-negative.spec.ts:21:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\auth-login-negative-Planex-8f0f0-8---Leading-spaces-in-email-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\auth-login-negative-Planex-8f0f0-8---Leading-spaces-in-email-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\auth-login-negative-Planex-8f0f0-8---Leading-spaces-in-email-chromium\error-context.md
+
+  2) [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-009 - Trailing spaces in email 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: locator('body')
+    Expected substring: [32m"Invalid credentials"[39m
+    Received string:    [31m"Welcome backEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[39m
+    Timeout: 10000ms
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 10000ms[22m
+    [2m  - waiting for locator('body')[22m
+    [2m    9 × locator resolved to <body class="min-h-full flex flex-col">…</body>[22m
+    [2m      - unexpected value "Welcome backEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+    [2m    9 × locator resolved to <body class="min-h-full flex flex-col">…</body>[22m
+    [2m      - unexpected value "Welcome backEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy.Login successful"[22m
+    [2m    5 × locator resolved to <body class="min-h-full flex flex-col">…</body>[22m
+    [2m      - unexpected value "Welcome backEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+
+
+       at ..\pages\LoginPage.ts:52
+
+      50 |
+      51 |   async expectLoginError(message: string): Promise<void> {
+    > 52 |     await expect(this.body).toContainText(message);
+         |                             ^
+      53 |   }
+      54 |
+      55 |   async expectDashboardVisible(): Promise<void> {
+        at LoginPage.expectLoginError (C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\pages\LoginPage.ts:52:29)
+        at C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\tests\auth\login-negative.spec.ts:21:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\auth-login-negative-Planex-f2f8b----Trailing-spaces-in-email-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\auth-login-negative-Planex-f2f8b----Trailing-spaces-in-email-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\auth-login-negative-Planex-f2f8b----Trailing-spaces-in-email-chromium\error-context.md
+
+  3) [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-014 - XSS injection attempt 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[name="email"]')
+    Expected: visible
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+    [2m  - waiting for locator('input[name="email"]')[22m
+
+
+       at ..\pages\LoginPage.ts:27
+
+      25 |     const baseUrl = process.env.BASE_URL || 'https://planex-front-end.vercel.app/';
+      26 |     await this.page.goto(baseUrl, { waitUntil: 'networkidle' });
+    > 27 |     await expect(this.emailInput).toBeVisible({ timeout: 15000 });
+         |                                   ^
+      28 |     await expect(this.loginButton).toBeVisible();
+      29 |   }
+      30 |
+        at LoginPage.navigate (C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\pages\LoginPage.ts:27:35)
+        at C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\tests\auth\login-negative.spec.ts:19:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\auth-login-negative-Planex-335fe-014---XSS-injection-attempt-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\auth-login-negative-Planex-335fe-014---XSS-injection-attempt-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\auth-login-negative-Planex-335fe-014---XSS-injection-attempt-chromium\error-context.md
+
+  4) [chromium] › tests\auth\login-negative.spec.ts:71:7 › Planex Login Page - Authentication Scenarios › Multiple failed login attempts should show lockout message 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+    Expected substring: [32m"Attempt 1 of 5"[39m
+    Received string:    [31m"Welcome back·[39m
+    [31mEMAIL ADDRESS[39m
+    [31mPASSWORD[39m
+    [31mForgot password?[39m
+    [31mLogin[39m
+    [31mBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[39m
+
+      78 |       const bodyText = await page.locator('body').innerText();
+      79 |       if (attempt < 5) {
+    > 80 |         expect(bodyText).toContain(`Attempt ${attempt} of 5`);
+         |                          ^
+      81 |       }
+      82 |     }
+      83 |
+        at C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\tests\auth\login-negative.spec.ts:80:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\auth-login-negative-Planex-5e00d-should-show-lockout-message-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\auth-login-negative-Planex-5e00d-should-show-lockout-message-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\auth-login-negative-Planex-5e00d-should-show-lockout-message-chromium\error-context.md
+
+  4 failed
+    [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-008 - Leading spaces in email 
+    [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-009 - Trailing spaces in email 
+    [chromium] › tests\auth\login-negative.spec.ts:17:9 › Planex Login Page - Authentication Scenarios › NEG-014 - XSS injection attempt 
+    [chromium] › tests\auth\login-negative.spec.ts:71:7 › Planex Login Page - Authentication Scenarios › Multiple failed login attempts should show lockout message 
+  20 passed (19.2m)

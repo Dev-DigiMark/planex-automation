@@ -1,0 +1,318 @@
+﻿Ôùç injected env (4) from .env // tip: Ôîÿ enable debugging { debug: true }
+
+Running 24 tests using 2 workers
+
+Ôùç injected env (0) from .env // tip: Ôîÿ enable debugging { debug: true }
+Ôùç injected env (0) from .env // tip: Ôùê secrets for agents [www.dotenvx.com]
+  Ô£ô   2 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-001 - Empty email and password (41.1s)
+  Ô£ÿ   1 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:9:7 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ Positive login should authenticate and show dashboard content (1.1m)
+Ôùç injected env (0) from .env // tip: Ôîÿ override existing { override: true }
+  Ô£ô   4 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-003 - Empty password (13.9s)
+  Ô£ô   5 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-004 - Invalid email format (7.8s)
+  Ô£ô   6 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-005 - Invalid email address (6.7s)
+  Ô£ô   7 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-006 - Invalid password (6.9s)
+  Ô£ô   8 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-007 - Invalid email and password (14.1s)
+  Ô£ÿ   9 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-008 - Leading spaces in email (18.5s)
+Ôùç injected env (0) from .env // tip: Ôùê secrets for agents [www.dotenvx.com]
+  Ô£ÿ   3 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-002 - Empty email (3.8m)
+Ôùç injected env (0) from .env // tip: Ôîÿ suppress logs { quiet: true }
+  Ô£ô  11 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-010 - Leading spaces in password (35.3s)
+  Ô£ô  12 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-011 - Trailing spaces in password (9.9s)
+  Ô£ô  13 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-012 - Special characters in email input (19.4s)
+  Ô£ÿ  10 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-009 - Trailing spaces in email (52.9s)
+Ôùç injected env (0) from .env // tip: Ôîÿ custom filepath { path: '/custom/path/.env' }
+  Ô£ô  15 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-014 - XSS injection attempt (17.6s)
+  Ô£ô  16 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-015 - Extremely long email value (7.8s)
+  Ô£ô  17 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-016 - Extremely long password value (7.6s)
+  Ô£ÿ  14 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-013 - SQL injection attempt (22.4s)
+Ôùç injected env (0) from .env // tip: Ôîÿ multiple files { path: ['.env.local', '.env'] }
+  Ô£ô  19 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-018 - Case sensitivity with wrong password casing (46.9s)
+  Ô£ô  20 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:26:7 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ Session invalidates after logout and refresh (15.7s)
+  Ô£ô  21 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:39:7 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ Direct dashboard access without login redirects to login page (7.2s)
+  Ô£ô  22 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:46:7 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ Browser back button after logout stays on login page (15.4s)
+  Ô£ÿ  18 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-017 - Boundary value validation for short email (43.5s)
+Ôùç injected env (0) from .env // tip: Ôùê encrypted .env [www.dotenvx.com]
+  Ô£ô  23 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:59:7 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ Refresh dashboard after logout remains on login page (40.3s)
+  Ô£ÿ  24 [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:72:7 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ Multiple failed login attempts should show lockout message (38.9s)
+
+
+  1) [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:9:7 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ Positive login should authenticate and show dashboard content 
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected: [32m"https://planex-front-end.vercel.app/"[39m
+    Received: [31m""[39m
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 20000ms[22m
+
+
+      12 |     await loginPage.login(validLogin.email, validLogin.password);
+      13 |     await loginPage.expectDashboardVisible();
+    > 14 |     await expect(page).toHaveURL(dashboardUrl, { timeout: 20000 });
+         |                        ^
+      15 |   });
+      16 |
+      17 |   for (const testData of negativeLoginCases) {
+        at C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\tests\auth\login-negative.spec.ts:14:24
+
+    attachment #1: video (video/webm) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+    test-results\auth-login-negative-Planex-d9850--and-show-dashboard-content-chromium\video.webm
+    ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+    Error Context: test-results\auth-login-negative-Planex-d9850--and-show-dashboard-content-chromium\error-context.md
+
+  2) [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-002 - Empty email 
+
+    [31mTest timeout of 200000ms exceeded.[39m
+
+    Error: locator.click: Test timeout of 200000ms exceeded.
+    Call log:
+    [2m  - waiting for locator('button[type="submit"]')[22m
+    [2m    - locator resolved to <button type="submit" aria-busy="false" data-size="default" aria-disabled="false" data-variant="default" aria-label="main button" class="inline-flex items-center justify-center shrink-0 relative overflow-hidden h-12 rounded-lg font-medium whitespace-nowrap select-none cursor-pointer outline-none transition-transform motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98] [&_svg]:pointeÔÇª>ÔÇª</button>[22m
+    [2m  - attempting click action[22m
+    [2m    - waiting for element to be visible, enabled and stable[22m
+    [2m    - element is visible, enabled and stable[22m
+    [2m    - scrolling into view if needed[22m
+    [2m    - done scrolling[22m
+    [2m    - performing click action[22m
+
+
+       at ..\pages\LoginPage.ts:34
+
+      32 |     await this.emailInput.fill(email);
+      33 |     await this.passwordInput.fill(password);
+    > 34 |     await this.loginButton.click();
+         |                            ^
+      35 |   }
+      36 |
+      37 |   async clearCredentials(): Promise<void> {
+        at LoginPage.login (C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\pages\LoginPage.ts:34:28)
+        at C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\tests\auth\login-negative.spec.ts:21:7
+
+    Error Context: test-results\auth-login-negative-Planex-1decf-arios-NEG-002---Empty-email-chromium\error-context.md
+
+  3) [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-008 - Leading spaces in email 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: locator('body')
+    Expected substring: [32m"Invalid credentials"[39m
+    Received string:    [31m"DashboardEmployeesSalaryAdvance PaymentsBillingExpense LogProjectsLeave ManagementAnnouncementsKnowledge BaseAttendanceActivity LogLogoutffatimasuper adminDashboardWelcome back, fatimaThursday, 25 June 2026Total Employees209 ActiveTotal Salary (this month)PKR -1,541,873,495,296.42Net payablePending Bills00 Due soonTotal ExpensesPKR 0This monthQuick ActionsAdd EmployeeAdd SalaryAdd BillingLog ExpenseBilling OverviewPending Bills0Due Soon0"[39m
+    Timeout: 10000ms
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 10000ms[22m
+    [2m  - waiting for locator('body')[22m
+    [2m    6 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+    [2m    4 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy.Login successful"[22m
+    [2m    2 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "DashboardEmployeesSalaryAdvance PaymentsBillingExpense LogProjectsLeave ManagementAnnouncementsKnowledge BaseAttendanceActivity LogLogoutffatimasuper adminDashboardWelcome back, fatimaThursday, 25 June 2026Quick ActionsAdd EmployeeAdd SalaryAdd BillingLog ExpenseBilling OverviewPending Bills0Due Soon0Login successful"[22m
+    [2m    2 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "DashboardEmployeesSalaryAdvance PaymentsBillingExpense LogProjectsLeave ManagementAnnouncementsKnowledge BaseAttendanceActivity LogLogoutffatimasuper adminDashboardWelcome back, fatimaThursday, 25 June 2026Total Employees209 ActiveTotal Salary (this month)PKR -1,541,873,495,296.42Net payablePending Bills00 Due soonTotal ExpensesPKR 0This monthQuick ActionsAdd EmployeeAdd SalaryAdd BillingLog ExpenseBilling OverviewPending Bills0Due Soon0Login successful"[22m
+    [2m    8 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "DashboardEmployeesSalaryAdvance PaymentsBillingExpense LogProjectsLeave ManagementAnnouncementsKnowledge BaseAttendanceActivity LogLogoutffatimasuper adminDashboardWelcome back, fatimaThursday, 25 June 2026Total Employees209 ActiveTotal Salary (this month)PKR -1,541,873,495,296.42Net payablePending Bills00 Due soonTotal ExpensesPKR 0This monthQuick ActionsAdd EmployeeAdd SalaryAdd BillingLog ExpenseBilling OverviewPending Bills0Due Soon0"[22m
+
+
+       at ..\pages\LoginPage.ts:50
+
+      48 |
+      49 |   async expectLoginError(message: string): Promise<void> {
+    > 50 |     await expect(this.body).toContainText(message);
+         |                             ^
+      51 |   }
+      52 |
+      53 |   async expectDashboardVisible(): Promise<void> {
+        at LoginPage.expectLoginError (C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\pages\LoginPage.ts:50:29)
+        at C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\tests\auth\login-negative.spec.ts:22:23
+
+    attachment #1: screenshot (image/png) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+    test-results\auth-login-negative-Planex-8f0f0-8---Leading-spaces-in-email-chromium\test-failed-1.png
+    ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+    attachment #2: video (video/webm) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+    test-results\auth-login-negative-Planex-8f0f0-8---Leading-spaces-in-email-chromium\video.webm
+    ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+    Error Context: test-results\auth-login-negative-Planex-8f0f0-8---Leading-spaces-in-email-chromium\error-context.md
+
+  4) [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-009 - Trailing spaces in email 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: locator('body')
+    Expected substring: [32m"Invalid credentials"[39m
+    Received string:    [31m"DashboardEmployeesSalaryAdvance PaymentsBillingExpense LogProjectsLeave ManagementAnnouncementsKnowledge BaseAttendanceActivity LogLogoutffatimasuper adminDashboardWelcome back, fatimaThursday, 25 June 2026Total Employees209 ActiveTotal Salary (this month)PKR -1,541,873,495,296.42Net payablePending Bills00 Due soonTotal ExpensesPKR 0This monthQuick ActionsAdd EmployeeAdd SalaryAdd BillingLog ExpenseBilling OverviewPending Bills0Due Soon0"[39m
+    Timeout: 10000ms
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 10000ms[22m
+    [2m  - waiting for locator('body')[22m
+    [2m    7 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+    [2m    4 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy.Login successful"[22m
+    [2m    - locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m    - unexpected value "DashboardEmployeesSalaryAdvance PaymentsBillingExpense LogProjectsLeave ManagementAnnouncementsKnowledge BaseAttendanceActivity LogLogoutffatimasuper adminDashboardWelcome back, fatimaThursday, 25 June 2026Quick ActionsAdd EmployeeAdd SalaryAdd BillingLog ExpenseBilling OverviewPending Bills0Due Soon0Login successful"[22m
+    [2m    - locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m    - unexpected value "DashboardEmployeesSalaryAdvance PaymentsBillingExpense LogProjectsLeave ManagementAnnouncementsKnowledge BaseAttendanceActivity LogLogoutffatimasuper adminDashboardWelcome back, fatimaThursday, 25 June 2026Quick ActionsAdd EmployeeAdd SalaryAdd BillingLog ExpenseBilling OverviewPending Bills0Due Soon0"[22m
+    [2m    4 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "DashboardEmployeesSalaryAdvance PaymentsBillingExpense LogProjectsLeave ManagementAnnouncementsKnowledge BaseAttendanceActivity LogLogoutffatimasuper adminDashboardWelcome back, fatimaThursday, 25 June 2026Total Employees209 ActiveTotal Salary (this month)PKR -1,541,873,495,296.42Net payablePending Bills00 Due soonTotal ExpensesPKR 0This monthQuick ActionsAdd EmployeeAdd SalaryAdd BillingLog ExpenseBilling OverviewPending Bills0Due Soon0"[22m
+
+
+       at ..\pages\LoginPage.ts:50
+
+      48 |
+      49 |   async expectLoginError(message: string): Promise<void> {
+    > 50 |     await expect(this.body).toContainText(message);
+         |                             ^
+      51 |   }
+      52 |
+      53 |   async expectDashboardVisible(): Promise<void> {
+        at LoginPage.expectLoginError (C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\pages\LoginPage.ts:50:29)
+        at C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\tests\auth\login-negative.spec.ts:22:23
+
+    attachment #1: screenshot (image/png) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+    test-results\auth-login-negative-Planex-f2f8b----Trailing-spaces-in-email-chromium\test-failed-1.png
+    ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+    Error Context: test-results\auth-login-negative-Planex-f2f8b----Trailing-spaces-in-email-chromium\error-context.md
+
+  5) [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-013 - SQL injection attempt 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: locator('body')
+    Expected substring: [32m"Invalid credentials"[39m
+    Received string:    [31m"Welcome backEmail AddressPlease enter a valid email addressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[39m
+    Timeout: 10000ms
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 10000ms[22m
+    [2m  - waiting for locator('body')[22m
+    [2m    20 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m       - unexpected value "Welcome backEmail AddressPlease enter a valid email addressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+
+
+       at ..\pages\LoginPage.ts:50
+
+      48 |
+      49 |   async expectLoginError(message: string): Promise<void> {
+    > 50 |     await expect(this.body).toContainText(message);
+         |                             ^
+      51 |   }
+      52 |
+      53 |   async expectDashboardVisible(): Promise<void> {
+        at LoginPage.expectLoginError (C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\pages\LoginPage.ts:50:29)
+        at C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\tests\auth\login-negative.spec.ts:22:23
+
+    attachment #1: screenshot (image/png) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+    test-results\auth-login-negative-Planex-b03c0-013---SQL-injection-attempt-chromium\test-failed-1.png
+    ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+    Error Context: test-results\auth-login-negative-Planex-b03c0-013---SQL-injection-attempt-chromium\error-context.md
+
+  6) [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-017 - Boundary value validation for short email 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: locator('body')
+    Expected substring: [32m"Invalid credentials"[39m
+    Received string:    [31m"Welcome backEmail AddressPlease enter a valid email addressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[39m
+    Timeout: 10000ms
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 10000ms[22m
+    [2m  - waiting for locator('body')[22m
+    [2m    23 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m       - unexpected value "Welcome backEmail AddressPlease enter a valid email addressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+
+
+       at ..\pages\LoginPage.ts:50
+
+      48 |
+      49 |   async expectLoginError(message: string): Promise<void> {
+    > 50 |     await expect(this.body).toContainText(message);
+         |                             ^
+      51 |   }
+      52 |
+      53 |   async expectDashboardVisible(): Promise<void> {
+        at LoginPage.expectLoginError (C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\pages\LoginPage.ts:50:29)
+        at C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\tests\auth\login-negative.spec.ts:22:23
+
+    attachment #1: screenshot (image/png) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+    test-results\auth-login-negative-Planex-7de29--validation-for-short-email-chromium\test-failed-1.png
+    ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+    attachment #2: video (video/webm) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+    test-results\auth-login-negative-Planex-7de29--validation-for-short-email-chromium\video.webm
+    ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+    Error Context: test-results\auth-login-negative-Planex-7de29--validation-for-short-email-chromium\error-context.md
+
+  7) [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:72:7 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ Multiple failed login attempts should show lockout message 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator: locator('body')
+    Expected substring: [32m"Attempt 5 of 5"[39m
+    Received string:    [31m"Welcome backToo many failed attempts.Please try again in 14m 50sEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[39m
+    Timeout: 10000ms
+
+    Call log:
+    [2m  - Expect "toContainText" with timeout 10000ms[22m
+    [2m  - waiting for locator('body')[22m
+    [2m    4 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backInvalid credentials. Attempt 4 of 5.Email AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy.Incorrect email or password"[22m
+    [2m    2 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backToo many failed attempts.Please try again in 15m 0sEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy.Incorrect email or password"[22m
+    [2m    2 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backToo many failed attempts.Please try again in 14m 58sEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy.Incorrect email or password"[22m
+    [2m    2 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backToo many failed attempts.Please try again in 14m 57sEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy.Incorrect email or password"[22m
+    [2m    2 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backToo many failed attempts.Please try again in 14m 56sEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy.Incorrect email or password"[22m
+    [2m    2 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backToo many failed attempts.Please try again in 14m 55sEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+    [2m    2 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backToo many failed attempts.Please try again in 14m 54sEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+    [2m    2 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backToo many failed attempts.Please try again in 14m 53sEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+    [2m    2 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backToo many failed attempts.Please try again in 14m 52sEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+    [2m    - locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m    - unexpected value "Welcome backToo many failed attempts.Please try again in 14m 51sEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+    [2m    2 ├ù locator resolved to <body class="min-h-full flex flex-col">ÔÇª</body>[22m
+    [2m      - unexpected value "Welcome backToo many failed attempts.Please try again in 14m 50sEmail AddressPasswordForgot password?LoginBy clicking continue, you agree to ourTerms of ServiceandPrivacy Policy."[22m
+
+
+      77 |       await loginPage.clearCredentials();
+      78 |       await loginPage.login('wronguser@example.com', 'InvalidPass123!');
+    > 79 |       await expect(page.locator('body')).toContainText(`Attempt ${attempt} of 5`);
+         |                                          ^
+      80 |     }
+      81 |
+      82 |     await loginPage.expectLoginError('Too many failed attempts');
+        at C:\Users\Digimark\OneDrive\Documents\Github\planex-automation\tests\auth\login-negative.spec.ts:79:42
+
+    attachment #1: screenshot (image/png) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+    test-results\auth-login-negative-Planex-5e00d-should-show-lockout-message-chromium\test-failed-1.png
+    ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+    attachment #2: video (video/webm) ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+    test-results\auth-login-negative-Planex-5e00d-should-show-lockout-message-chromium\video.webm
+    ÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇÔöÇ
+
+    Error Context: test-results\auth-login-negative-Planex-5e00d-should-show-lockout-message-chromium\error-context.md
+
+  7 failed
+    [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:9:7 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ Positive login should authenticate and show dashboard content 
+    [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-002 - Empty email 
+    [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-008 - Leading spaces in email 
+    [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-009 - Trailing spaces in email 
+    [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-013 - SQL injection attempt 
+    [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:18:9 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ NEG-017 - Boundary value validation for short email 
+    [chromium] ÔÇ║ tests\auth\login-negative.spec.ts:72:7 ÔÇ║ Planex Login Page - Authentication Scenarios ÔÇ║ Multiple failed login attempts should show lockout message 
+  17 passed (15.0m)

@@ -1,0 +1,27 @@
+﻿const { chromium } = require('playwright');
+(async ()=>{
+  const browser = await chromium.launch({ headless:true });
+  const page = await browser.newPage();
+  await page.goto('https://planex-front-end.vercel.app/dashboard/', { waitUntil:'networkidle' });
+  await page.screenshot({ path:'temp_login_page.png', fullPage:true });
+  console.log('Before login URL', page.url());
+  console.log('Before login title', await page.title());
+  const emailField = await page.locator('input[name="email"]');
+  const passwordField = await page.locator('input[name="password"]');
+  console.log('email visible', await emailField.isVisible());
+  console.log('pwd visible', await passwordField.isVisible());
+  console.log('email placeholder', await emailField.getAttribute('placeholder'));
+  console.log('password placeholder', await passwordField.getAttribute('placeholder'));
+  await emailField.fill('fatimaqa202@gmail.com');
+  await passwordField.fill('Test@1234');
+  await page.click('button[type="submit"]');
+  await page.waitForTimeout(3000);
+  console.log('After login URL', page.url());
+  console.log('After login title', await page.title());
+  await page.screenshot({ path:'temp_after_login.png', fullPage:true });
+  const bodyText = await page.locator('body').innerText();
+  console.log('bodyText snippet', bodyText.slice(0,400));
+  const err = await page.locator('text=Invalid').allTextContents();
+  console.log('Invalid texts', err);
+  await browser.close();
+})();
