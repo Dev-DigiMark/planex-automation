@@ -10,8 +10,7 @@ test('DASH-001 - Verify Dashboard UI Elements', async ({ page }) => {
 
     // Dashboard Heading
     await expect(page.getByRole('heading', { name: 'Dashboard' }))
-        .toBeVisible();
-
+    .toBeVisible();
     // Welcome Message
     await expect(page.getByText('Welcome back'))
         .toBeVisible();
@@ -23,19 +22,19 @@ test('DASH-001 - Verify Dashboard UI Elements', async ({ page }) => {
     await expect(page.getByText('Active'))
         .toBeVisible();
 
-    await expect(page.getByText('Total Salary'))
+    await expect(page.getByText(/Total Salary/i))
         .toBeVisible();
 
-    await expect(page.getByText('Pending Bills'))
+    await expect(page.getByText(/Pending Bills/i).first())
         .toBeVisible();
 
-    await expect(page.getByText('Total Expenses'))
+    await expect(page.getByText(/Total Expenses/i))
         .toBeVisible();
 
     // Sections
-    await expect(page.getByText('Quick Actions'))
+    await expect(page.getByText(/Quick Actions/i))
         .toBeVisible();
 
-    await expect(page.getByText('Billing Overview'))
+    await expect(page.getByText(/Billing Overview/i))
         .toBeVisible();
 });
